@@ -3,12 +3,12 @@
 // 12821 -> да
 // 23432 -> да
 
-void isPalindrom(int num)
+string isPalindrom(int num)
 {
-    if (num / 1000 == (num % 10 * 10) + (num / 10 % 10)) Console.WriteLine("Да");
-    else Console.WriteLine("Нет");
+    if (num / 1000 == (num % 10 * 10) + (num / 10 % 10)) return "Да";
+    else return "Нет";
 }
 
 Console.WriteLine("Введите пяти значное число ");
 int num = Convert.ToInt32(Console.ReadLine());
-isPalindrom(num);
+Console.WriteLine(isPalindrom(num));
